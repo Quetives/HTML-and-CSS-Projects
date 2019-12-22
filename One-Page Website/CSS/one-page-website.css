@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    border: 8px groove #ffcb08;
+    padding: 15px 15px 10px;
+    background-color: #0c4da2;
+    color: #ffcb08;    
+}
+
+.topnav {
+    background-color:#ffcb08;
+    border: 8px solid #ffcb08;
+    border-radius: 6px;
+}
+
+.info {
+    border: 8px ridge #ffcb08;
+    margin: 10px;
+    width: 90%;
+}
+
+.tutorial {
+    border: 8px inset #ffcb08;
+    margin: 10px;
+    width: 90%;
+}
+
+.join {
+    border: 8px outset #ffcb08;
+    margin: 10px;
+    width: 90%;
+}
+
+.input {
+    margin: 10px;
+}
+
+.submit {
+    margin: 10px;
+    text-align: center;
+}
