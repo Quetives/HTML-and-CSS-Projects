@@ -3,7 +3,7 @@
 	<head>
 		<title>How to make a Squad | Monster Hunter World</title>
 		<meta charset="utf-8">
-		<script src="Basic_JavaScript_1.js"></script>
+		
 		<link rel="stylesheet" href="./CSS/one-page-website.css">
 	</head>
 	<body>
@@ -68,13 +68,73 @@
 			<!-- end form for joining squad -->
 			</div>
 			<p>See you out there Hunter!!</p>
-			<img src="mhw.jpg" alt="Hunters Photo"><br>
 		
-		</main>	
+		</main>
+	</center>
+
+		<div class="row">
+			<div class="column">
+				<img src="mhw.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="mhw_bg.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 2</div>
+					<img src="mhw.jpg" style="width:100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 2</div>
+					<img src="mhw_bg.jpg" style="width:100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 2</div>
+					<img src="monster-hunter-world-iceborne-mhw-banbaro.jpg" style="width:100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 2</div>
+					<img src="monster-hunter-world-iceborne-mhw-tigrex.jpg" style="width:100%;">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption">Monster Hunter</p>
+				</div>
+
+				<div class="column">
+					<img class="demo" src="mhw.jpg" onclick="currentSlide(1)" alt="Hunt Together!">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="mhw_bg.jpg" onclick="currentSlide(2)" alt="Slay Dragons!">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="monster-hunter-world-iceborne-mhw-banbaro.jpg" onclick="currentSlide(3)" alt="Hunt Mighty Beasts!">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="monster-hunter-world-iceborne-mhw-tigrex.jpg" onclick="currentSlide(4)" alt="Survive Savage Monsters!">
+				</div>
+
+			</div>
+		</div>
 		
 		<footer>
 			<p>This is a footer.</p>
 		</footer>
-	</center>
+	
+	<script src="./JS/One_Page_Website.js"></script>
 	</body>
 </html>
